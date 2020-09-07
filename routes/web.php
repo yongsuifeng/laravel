@@ -15,3 +15,9 @@ Route::get('/', function () {
 //return  "安装成功！";
     return view('welcome');
 });
+
+Route::get('/hello', function () {
+    return 'Hello, Welcome to LaravelAcademy.org';
+});
+
+Route::get('/user', 'UserController@index');
